@@ -1,0 +1,136 @@
+/* Contact Section Card Layout Fixes */
+
+/* 1. Parent Grid Container */
+.contact-cards {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+  width: 100% !important;
+  margin-top: 30px !important;
+  padding: 0 !important;
+}
+
+/* Remove Bootstrap column interference inside the grid */
+.contact-cards > div {
+  max-width: 100% !important;
+  flex: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+/* 2. The Card Itself */
+.contact-cards .contact-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  
+  width: 100% !important;
+  min-height: 260px !important;
+  min-width: 240px !important;
+  padding: 24px !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  transform: none !important; /* strictly NO scale/translateX layout shifting */
+
+  /* Restore visual boundaries */
+  border-radius: 8px !important;
+  background: linear-gradient(180deg, rgba(15, 22, 46, 0.94), rgba(8, 13, 28, 0.92)) !important;
+  border: 1px solid rgba(96, 243, 255, 0.18) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  overflow: visible !important;
+}
+
+/* Interactive Hover State */
+.contact-cards .contact-card:hover {
+  transform: translateY(-8px) !important; 
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 0 0 24px rgba(244, 244, 20, 0.3) !important;
+}
+
+/* 3. Typography & Internal Element Strict Alignments */
+.contact-card h3 {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin: 0 !important;
+  color: #fff !important; 
+  position: relative !important; /* Force static/relative to kill any absolute overlap */
+  transform: none !important;
+  text-align: center !important;
+}
+
+.contact-card p {
+  margin: 0 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
+  color: #ccc !important;
+  position: relative !important;
+  transform: none !important;
+  text-align: center !important;
+}
+
+.contact-card .icon {
+  margin: 0 !important;
+  font-size: 2.8rem !important;
+  color: #F4F412 !important;
+  text-shadow: 0 2px 8px rgba(244, 244, 20, 0.4) !important;
+  position: relative !important;
+  transform: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Fix background ghosting elements if there's any fake absolute layered text */
+.contact-card h3::before, 
+.contact-card h3::after,
+.contact-card::before, 
+.contact-card::after {
+  content: none !important;
+  display: none !important;
+}
+
+.contact-card__link {
+  transition: all 0.3s ease !important;
+  white-space: normal !important; 
+  word-break: break-all !important;
+  font-weight: 600 !important;
+  color: #007bff !important;
+  text-decoration: none !important;
+  position: relative !important;
+}
+
+.contact-card__link:hover {
+  color: #F4F412 !important;
+  text-decoration: underline !important;
+  text-shadow: 0 0 8px rgba(244, 244, 20, 0.6) !important;
+}
+
+/* 4. Mandatory Responsiveness */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-cards {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  .contact-cards .contact-card {
+    min-height: 200px !important;
+  }
+}
+
+/* Disable overflow hidden constraint on main sections */
+#contact-section {
+  overflow: visible !important;
+}

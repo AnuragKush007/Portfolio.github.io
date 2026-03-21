@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Anurag Kushwaha | Interactive Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="description"
+      content="Game-inspired interactive portfolio for Anurag Kushwaha, Frontend Developer and Data Analyst."
+    >
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+<link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-enhancements.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="140">
+    <div class="scroll-progress" aria-hidden="true">
+      <span id="scroll-progress-bar" class="scroll-progress__bar"></span>
+    </div>
+
+    <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+    <div id="game-loader" class="game-loader" aria-hidden="true">
+      <div class="game-loader__panel">
+        <p class="game-loader__eyebrow">Boot Sequence</p>
+        <h1>Loading Anurag Kushwaha's Portfolio</h1>
+        <div class="game-loader__bar">
+          <span class="game-loader__progress"></span>
+        </div>
+        <p class="game-loader__status">Initializing missions, HUD, and interface systems...</p>
+      </div>
+    </div>
+
+    <div class="hud-frame hud-frame-top"></div>
+    <div class="hud-frame hud-frame-bottom"></div>
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target game-hud"
+      id="ftco-navbar"
+    >
+      <div class="container game-hud__inner">
+        <a class="navbar-brand game-brand" href="#home-section">
+          <span class="game-brand__label">Portfolio Interface</span>
+          <span class="game-brand__name">Anurag Kushwaha</span>
+        </a>
+        <button
+          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> HUD
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+            <li class="nav-item"><a href="#portfolio-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <aside class="player-panel">
+      <div class="player-panel__card">
+        <p class="panel-tag">Profile</p>
+        <div class="profile-avatar-3d" id="profile-avatar-3d">
+          <div class="profile-avatar-3d__aura"></div>
+          <div class="profile-avatar-3d__rings"></div>
+          <div class="profile-avatar-3d__lines">
+            <canvas
+              class="profile-avatar-3d__canvas"
+              id="profile-energy-canvas"
+              width="320"
+              height="320"
+              aria-hidden="true"
+            ></canvas>
+          </div>
+          <div class="profile-avatar-3d__core">
+            <div class="profile-avatar-3d__image-shell">
+              <img src="images/about-me.png" alt="Anurag Kushwaha profile picture" class="profile-avatar-3d__image">
+            </div>
+          </div>
+        </div>
+        <h2>Anurag Kushwaha</h2>
+        <p class="player-role">Frontend Developer | Data Analyst</p>
+
+        <div class="xp-box">
+          <div class="xp-box__meta">
+            <span>Expertise</span>
+            <span>Advanced</span>
+          </div>
+          <div class="xp-box__track">
+            <span class="xp-box__fill" style="width: 84%"></span>
+          </div>
+        </div>
+
+        <ul class="player-stats">
+          <li><span>Location</span><strong>Lucknow, India</strong></li>
+          <li class="player-stats__compact"><span>Coordinates</span><strong>26&deg;49'37.4"N, 80&deg;53'10.3"E</strong></li>
+          <li><span>Primary Role</span><strong>Data Analyst</strong></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="game-shell">
+      <section id="home-section" class="hero game-section game-hero mission-section" data-mission="Home">
+        <div class="home-slider owl-carousel">
+          <div class="slider-item">
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+                <div class="col-lg-7 text-block ftco-animate" data-scrollax="properties: { translateY: '20%' }">
+                  <div class="text hero-copy">
+                    <div class="hero-topline">
+                      <span class="hero-pill">Home Online</span>
+                      <span class="hero-pill hero-pill--accent">UI Systems Stable</span>
+                    </div>
+                    <h1 class="mb-4 section-title section-title--hero scroll-reveal">
+                      <span class="section-title-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                          <path d="M3 10.5 12 3l9 7.5"></path>
+                          <path d="M5.5 9.5V21h13V9.5"></path>
+                        </svg>
+                      </span>
+                      <span>Entering the world of <span>creative UI missions</span></span>
+                    </h1>
+                    <p class="hero-subtitle">
+                      Frontend developer and data-focused builder crafting responsive interfaces, dashboards, and polished user experiences.
+                    </p>
+                    <div class="hero-cta">
+                      <a href="#portfolio-section" class="btn btn-primary py-3 px-4">View Projects</a>
+                      <a href="https://www.linkedin.com/in/anurag-kushwaha-ba3695228/" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a>
+                      <a href="https://github.com/AnuragKush007" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
+                    </div>
+                    <div class="hero-stats-bar">
+                      <div class="hero-stat-chip">
+                        <strong>10+</strong>
+                        <span>Responsive Pages</span>
+                      </div>
+                      <div class="hero-stat-chip">
+                        <strong>25%</strong>
+                        <span>Load Time Boost</span>
+                      </div>
+                      <div class="hero-stat-chip">
+                        <strong>6</strong>
+                        <span>Core Skill Paths</span>
+                      </div>
+                    </div>
+                    <span class="underline animated-underline"></span>
+                  </div>
+                </div>
+                <div class="col-lg-5 ftco-animate">
+                  <div class="hero-showcase hero-showcase--cards-only">
+                    <div class="hero-role-cards" aria-label="Professional roles">
+                      <div class="hero-role-card hero-role-card--developer">
+                        <span class="hero-role-card__label">Role</span>
+                        <strong>Developer</strong>
+                      </div>
+                      <div class="hero-role-card hero-role-card--analyst">
+                        <span class="hero-role-card__label">Focus</span>
+                        <strong>Data Analyst</strong>
+                      </div>
+                      <div class="hero-role-card hero-role-card--powerbi">
+                        <span class="hero-role-card__label">Tools</span>
+                        <strong>Power BI Enthusiast</strong>
+                      </div>
+                      <div class="hero-role-card hero-role-card--ui">
+                        <span class="hero-role-card__label">Craft</span>
+                        <strong>Responsive UI Builder</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ftco-about ftco-section game-section mission-section" id="about-section" data-mission="About">
+        <div class="container">
+          <div class="mission-header text-center ftco-animate scroll-reveal">
+            <h2 class="section-title section-title--center">
+              <span class="section-title-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path>
+                  <path d="M4 21a8 8 0 0 1 16 0"></path>
+                </svg>
+              </span>
+              <span>About</span>
+            </h2>
+            <span class="underline animated-underline"></span>
+            <p>Meet the player, review the profile, and unlock the core background behind the portfolio.</p>
+          </div>
+
+          <div class="row align-items-stretch mission-grid">
+            <div class="col-lg-5 d-flex ftco-animate">
+              <div class="game-card player-bio-card w-100">
+                <div class="player-bio-card__top">
+                  <div class="profile-avatar-3d profile-avatar-3d--about" data-avatar-effect>
+                    <div class="profile-avatar-3d__aura"></div>
+                    <div class="profile-avatar-3d__rings"></div>
+                    <div class="profile-avatar-3d__lines">
+                      <canvas
+                        class="profile-avatar-3d__canvas"
+                        width="320"
+                        height="320"
+                        aria-hidden="true"
+                      ></canvas>
+                    </div>
+                    <div class="profile-avatar-3d__core">
+                      <div class="profile-avatar-3d__image-shell">
+                        <img src="images/about-me.png" alt="Anurag Kushwaha portrait" class="profile-avatar-3d__image">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="about-info">
+                    <p><span class="title-s">Name:</span> <span>Anurag Kushwaha</span></p>
+                    <p><span class="title-s">Role:</span> <span>Front-End Developer &amp; Data Analyst</span></p>
+                    <p><span class="title-s">Experience:</span> <span>Front-End Developer Intern</span></p>
+                    <p><span class="title-s">Address:</span> <span>Greater Noida, Uttar Pradesh, India</span></p>
+                  </div>
+                </div>
+                <div class="player-bio-card__footer">
+                  <div class="mini-stat">
+                    <strong class="number" data-number="4">0</strong>
+                    <span>Projects completed</span>
+                  </div>
+                  <div class="mini-stat">
+                    <strong class="number" data-number="1">0</strong>
+                    <span>Internship completed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7 ftco-animate">
+              <div class="game-card mission-copy-card">
+                <p class="panel-tag">Story Briefing</p>
+                <h3>About Me</h3>
+                <p>
+                  Motivated Computer Science graduate with hands-on experience in web development and data analysis.
+                  Skilled in HTML, CSS, JavaScript, SQL, Advanced Excel, Power BI, and Tableau for building responsive
+                  applications and interactive dashboards.
+                </p>
+                <ul class="mission-list about-info mt-4">
+                  <li class="d-flex"><span>Profile:</span> <span>Front-End Development &amp; Data Analysis</span></li>
+                  <li class="d-flex"><span>Domain:</span> <span>Web Applications, Dashboards &amp; Data Visualization</span></li>
+                  <li class="d-flex"><span>Education:</span> <span>B.Tech CSE &amp; Masters in Data Science and Analytics with AI</span></li>
+                  <li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+                  <li class="d-flex"><span>BI Tools:</span> <span>Power BI Desktop, Power BI Service, Power BI Mobile, Tableau</span></li>
+                  <li class="d-flex"><span>Other Skills:</span> <span>Git, GitHub, VS Code, Excel, Power Query, Data Cleaning</span></li>
+                  <li class="d-flex"><span>Interest:</span> <span>Web Interfaces, Dashboard Design, Problem Solving</span></li>
+                </ul>
+                <div class="mission-copy-card__actions">
+                  <a href="https://www.linkedin.com/in/anurag-kushwaha-ba3695228/" class="btn btn-primary py-3 px-4">Open LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ftco-section game-section mission-section" id="skills-section" data-mission="Skills">
+        <div class="container">
+          <div class="mission-header text-center ftco-animate scroll-reveal">
+            <h2 class="section-title section-title--center">
+              <span class="section-title-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M14 7 17 10"></path>
+                  <path d="m10 14-7 7"></path>
+                  <path d="m3 21 7-7"></path>
+                  <path d="M19 5 5 19"></path>
+                  <path d="m15 5 4 4"></path>
+                </svg>
+              </span>
+              <span>Skills</span>
+            </h2>
+            <span class="underline animated-underline"></span>
+            <p>Core technical abilities displayed as animated power stats and progress-driven XP bars.</p>
+          </div>
+
+          <div class="skills-snapshot-grid ftco-animate">
+            <article class="skill-snapshot-card">
+              <span class="skill-snapshot-card__label">Frontend</span>
+              <strong>Responsive interfaces with HTML, CSS, and JavaScript.</strong>
+            </article>
+            <article class="skill-snapshot-card">
+              <span class="skill-snapshot-card__label">Analytics</span>
+              <strong>Data storytelling through dashboards, KPIs, and reporting.</strong>
+            </article>
+            <article class="skill-snapshot-card">
+              <span class="skill-snapshot-card__label">Visualization</span>
+              <strong>Power BI, Tableau, DAX, and business-friendly insights.</strong>
+            </article>
+            <article class="skill-snapshot-card">
+              <span class="skill-snapshot-card__label">Workflow</span>
+              <strong>Git-driven collaboration with practical problem solving.</strong>
+            </article>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 ftco-animate">
+              <div class="game-card ability-card">
+                <p class="panel-tag">Power Stats</p>
+                <div class="ability-list">
+                  <div class="ability-item">
+                    <div class="ability-item__meta"><span>HTML &amp; CSS</span><strong>90 XP</strong></div>
+                    <div class="ability-item__track"><span class="ability-item__fill" data-width="90%"></span></div>
+                  </div>
+                  <div class="ability-item">
+                    <div class="ability-item__meta"><span>JavaScript</span><strong>85 XP</strong></div>
+                    <div class="ability-item__track"><span class="ability-item__fill" data-width="85%"></span></div>
+                  </div>
+                  <div class="ability-item">
+                    <div class="ability-item__meta"><span>React Readiness</span><strong>75 XP</strong></div>
+                    <div class="ability-item__track"><span class="ability-item__fill" data-width="75%"></span></div>
+                  </div>
+                  <div class="ability-item">
+                    <div class="ability-item__meta"><span>SQL &amp; MySQL</span><strong>88 XP</strong></div>
+                    <div class="ability-item__track"><span class="ability-item__fill" data-width="88%"></span></div>
+                  </div>
+                  <div class="ability-item">
+                    <div class="ability-item__meta"><span>Power BI &amp; Tableau</span><strong>86 XP</strong></div>
+                    <div class="ability-item__track"><span class="ability-item__fill" data-width="86%"></span></div>
+                  </div>
+                  <div class="ability-item">
+                    <div class="ability-item__meta"><span>Excel &amp; Power Query</span><strong>84 XP</strong></div>
+                    <div class="ability-item__track"><span class="ability-item__fill" data-width="84%"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 ftco-animate">
+              <div class="game-card stats-grid-card">
+                <p class="panel-tag">Specialization Nodes</p>
+                <div class="stats-grid">
+                  <div class="stat-orb" style="--progress: 90;">
+                    <div class="stat-orb__inner">
+                      <strong>90</strong>
+                      <span>UI Systems</span>
+                    </div>
+                  </div>
+                  <div class="stat-orb" style="--progress: 85;">
+                    <div class="stat-orb__inner">
+                      <strong>85</strong>
+                      <span>JavaScript</span>
+                    </div>
+                  </div>
+                  <div class="stat-orb" style="--progress: 88;">
+                    <div class="stat-orb__inner">
+                      <strong>88</strong>
+                      <span>SQL Logic</span>
+                    </div>
+                  </div>
+                  <div class="stat-orb" style="--progress: 86;">
+                    <div class="stat-orb__inner">
+                      <strong>86</strong>
+                      <span>Dashboarding</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="stats-grid-card__note">
+                  Strongest loadout combines responsive UI development with data visualization and practical analytics workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ftco-section game-section mission-section" id="resume-section" data-mission="Experience">
+        <div class="container">
+          <div class="mission-header text-center ftco-animate scroll-reveal">
+            <h2 class="section-title section-title--center">
+              <span class="section-title-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                  <path d="M4 9h16"></path>
+                  <path d="M5 7h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"></path>
+                </svg>
+              </span>
+              <span>Experience &amp; Education</span>
+            </h2>
+            <div class="section-title-accent section-title-accent--center" aria-hidden="true">
+              <span class="section-title-accent__line"></span>
+            </div>
+            <p>Experience and education laid out like completed quests and progression milestones.</p>
+          </div>
+
+          <div class="row campaign-row">
+            <div class="col-lg-6 ftco-animate">
+              <div class="game-card campaign-card">
+                <p class="panel-tag">Quest Log</p>
+                <div class="timeline-entry">
+                  <span class="date">April 2024 - June 2024</span>
+                  <h3>Front-End Developer Intern</h3>
+                  <span class="position">Celebal Technologies</span>
+                  <p>Worked on live web project delivery with a focus on responsive UI implementation and front-end performance improvements.</p>
+                  <ul>
+                    <li>Collaborated on a live project and contributed to 10+ responsive, mobile-friendly web pages using HTML5, CSS3, and JavaScript.</li>
+                    <li>Improved front-end performance by reducing page load time by 25% through cleaner CSS structure and JavaScript refactoring.</li>
+                    <li>Worked in an Agile team, used Git for version control, and ensured cross-browser compatibility and accessibility best practices.</li>
+                  </ul>
+                </div>
+                <div class="timeline-entry">
+                  <span class="date">2024 - 2026</span>
+                  <h3>Academic Project Experience</h3>
+                  <span class="position">SQL, Power BI &amp; Web Development</span>
+                  <p>Built hands-on projects during technical coursework in software development and analytics.</p>
+                  <ul>
+                    <li>Engineered a Cab Booking System with normalized database schemas, optimized SQL queries, and role-based access control.</li>
+                    <li>Built a D-Mart Sales Analysis dashboard in Power BI using KPIs, DAX measures, and actionable business insights.</li>
+                    <li>Created projects like an Online Auction System, Password Manager, Email Validator, and Responsive Blog Website.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 ftco-animate">
+              <div class="game-card campaign-card">
+                <p class="panel-tag">Level Progression</p>
+                <div class="timeline-entry">
+                  <span class="date">Nov 2021 - June 2025</span>
+                  <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+                  <span class="position">Noida Institute of Engineering and Technology</span>
+                  <p>Greater Noida, Uttar Pradesh</p>
+                </div>
+                <div class="timeline-entry">
+                  <span class="date">Dec 2025 - Dec 2026</span>
+                  <h3>Masters in Data Science and Analytics with AI</h3>
+                  <span class="position">IT Vedant</span>
+                  <p>Lucknow, Uttar Pradesh</p>
+                </div>
+                <div class="resume-actions">
+                  <a href="Anurag_Resume_Update_Final.pdf" class="btn btn-primary py-3 px-4" download>Download Full Resume</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ftco-section game-section mission-section" id="portfolio-section" data-mission="Projects">
+        <div class="container">
+          <div class="mission-header text-center ftco-animate scroll-reveal">
+            <h2 class="section-title section-title--center">
+              <span class="section-title-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                  <path d="M4 9h16"></path>
+                  <path d="M5 7h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"></path>
+                </svg>
+              </span>
+              <span>Projects</span>
+            </h2>
+            <span class="underline animated-underline"></span>
+            <p>Projects presented as playable quests, each with a focused challenge, stack, and mission objective.</p>
+          </div>
+
+<div class="row d-flex justify-content-center">
+            <div class="col-md-6 col-xl-4 d-flex ftco-animate">
+              <article class="game-card mission-card w-100">
+                <a href="https://github.com/AnuragKush007" class="mission-card__media zoom-effect" style="background-image: url('images/proj_1.jpg');"></a>
+                <div class="mission-card__body">
+                  <p class="panel-tag">Quest 01</p>
+                  <h3>Cab Booking System</h3>
+                  <p>Designed a SQL-backed booking system with normalized schemas, faster queries, and role-based access control.</p>
+                  <p class="mission-stack"><span>Tech Stack</span><strong>SQL, Database Design, Backend Logic</strong></p>
+                  <a href="https://github.com/AnuragKush007" class="btn btn-primary py-2 px-4">View Project</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4 d-flex ftco-animate">
+              <article class="game-card mission-card w-100">
+                <a href="https://github.com/AnuragKush007" class="mission-card__media zoom-effect" style="background-image: url('images/proj_2.jpg');"></a>
+                <div class="mission-card__body">
+                  <p class="panel-tag">Quest 02</p>
+                  <h3>D-Mart Sales Analysis</h3>
+                  <p>Built a Power BI dashboard with KPIs and DAX to track revenue, profit margins, customer segments, and product performance.</p>
+                  <p class="mission-stack"><span>Tech Stack</span><strong>Power BI, DAX, Data Visualization</strong></p>
+                  <a href="https://github.com/AnuragKush007" class="btn btn-primary py-2 px-4">Play Dashboard</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4 d-flex ftco-animate">
+              <article class="game-card mission-card w-100">
+                <a href="https://github.com/AnuragKush007" class="mission-card__media zoom-effect" style="background-image: url('images/proj_3.jpg');"></a>
+                <div class="mission-card__body">
+                  <p class="panel-tag">Quest 03</p>
+                  <h3>Responsive Blog Website</h3>
+                  <p>Created a responsive website using HTML, CSS, and JavaScript with a focus on layout adaptability and clean UI structure.</p>
+                  <p class="mission-stack"><span>Tech Stack</span><strong>HTML, CSS, JavaScript</strong></p>
+                  <a href="https://github.com/AnuragKush007" class="btn btn-primary py-2 px-4">View Project</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4 d-flex ftco-animate">
+              <article class="game-card mission-card w-100">
+                <a href="https://github.com/AnuragKush007" class="mission-card__media zoom-effect" style="background-image: url('images/proj_4.jpg');"></a>
+                <div class="mission-card__body">
+                  <p class="panel-tag">Quest 04</p>
+                  <h3>Online Auction System</h3>
+                  <p>Developed a web application project as part of coursework to strengthen database, interface, and application design skills.</p>
+                  <p class="mission-stack"><span>Tech Stack</span><strong>Web App Design, Database Workflows</strong></p>
+                  <a href="https://github.com/AnuragKush007" class="btn btn-primary py-2 px-4">View Project</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4 d-flex ftco-animate">
+              <article class="game-card mission-card w-100">
+                <a href="https://github.com/AnuragKush007" class="mission-card__media zoom-effect" style="background-image: url('images/proj_5.jpg');"></a>
+                <div class="mission-card__body">
+                  <p class="panel-tag">Quest 05</p>
+                  <h3>Utility JavaScript Projects</h3>
+                  <p>Built an Email Validator and Password Manager to practice JavaScript logic, validation flow, and user-focused functionality.</p>
+                  <p class="mission-stack"><span>Tech Stack</span><strong>JavaScript, Validation, UX Logic</strong></p>
+                  <a href="https://github.com/AnuragKush007" class="btn btn-primary py-2 px-4">Open Project</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4 d-flex ftco-animate">
+              <article class="game-card mission-card mission-card--cta w-100">
+                <div class="mission-card__body">
+                  <p class="panel-tag">Bonus Level</p>
+                  <h3>More Projects on GitHub</h3>
+                  <p>I enjoy building responsive interfaces and turning raw data into useful dashboards.</p>
+                  <p class="mission-stack"><span>Explore</span><strong>More experiments, UI builds, and analytics work.</strong></p>
+                  <a href="https://github.com/AnuragKush007" class="btn btn-primary py-2 px-4">Open GitHub</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="row stats-band">
+            <div class="col-sm-6 col-lg-3 ftco-animate">
+              <div class="stat-band-card">
+                <strong class="number" data-number="1">0</strong>
+                <span>Internship</span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 ftco-animate">
+              <div class="stat-band-card">
+                <strong class="number" data-number="5">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 ftco-animate">
+              <div class="stat-band-card">
+                <strong class="number" data-number="6">0</strong>
+                <span>Core Skills</span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 ftco-animate">
+              <div class="stat-band-card">
+                <strong class="number" data-number="2">0</strong>
+                <span>Study Tracks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ftco-section contact-section game-section mission-section" id="contact-section" data-mission="Contact">
+        <div class="container">
+          <div class="mission-header text-center ftco-animate scroll-reveal">
+            <h2 class="section-title section-title--center">
+              <span class="section-title-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M4 6h16v12H4z"></path>
+                  <path d="m4 7 8 6 8-6"></path>
+                </svg>
+              </span>
+              <span>Contact</span>
+            </h2>
+            <span class="underline animated-underline"></span>
+            <p>Ready to collaborate? Reach out through the channels below and start the conversation.</p>
+          </div>
+
+<div class="contact-cards mb-5">
+
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div class="align-self-stretch box p-4 text-center game-card contact-card">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-map-o"></span>
+                </div>
+                <h3 class="mb-3">LOCATION</h3>
+                <p>Lucknow, India</p>
+                <p>26°49'37.4"N, 80°53'10.3"E</p>
+                <a class="contact-card__link" href="https://www.google.com/maps?q=26.827056,80.886194" target="_blank" style="display: block; text-align: center; font-size: 0.9rem;">View on Maps</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2 d-flex ftco-animate">
+              <div class="align-self-stretch box p-4 text-center game-card contact-card">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-phone2"></span>
+                </div>
+                <h3 class="mb-4">PHONE</h3>
+                <p><a class="contact-card__link" href="tel:+917007022601">+91 7007022601</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div class="align-self-stretch box p-4 text-center game-card contact-card">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-paper-plane"></span>
+                </div>
+                <h3 class="mb-4">EMAIL</h3>
+                <p><a class="contact-card__link" href="mailto:anurag07012002@gmail.com">anurag07012002@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2 d-flex ftco-animate">
+              <div class="align-self-stretch box p-4 text-center game-card contact-card">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-globe"></span>
+                </div>
+                <h3 class="mb-4">RESUME FILE</h3>
+                <p><a class="contact-card__link" href="Anurag_Resume_Update_Final.pdf" download>Download Resume</a></p>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="game-card contact-cta ftco-animate text-center">
+            <p class="panel-tag">Open for Opportunities</p>
+            <h3>Let&apos;s connect and build the next experience.</h3>
+            <p>I&apos;m open to frontend, UI, dashboard, and early-career developer opportunities.</p>
+            <div class="contact-cta__meta">
+              <span>Frontend Roles</span>
+              <span>Dashboard Projects</span>
+              <span>Immediate Response</span>
+            </div>
+            <a href="mailto:anurag07012002@gmail.com" class="btn btn-primary py-3 px-5">Email Me</a>
+
+            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+              <li><a href="https://github.com/AnuragKush007"><span class="icon-github"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/anurag-kushwaha-ba3695228/"><span class="icon-linkedin"></span></a></li>
+              <li><a href="mailto:anurag07012002@gmail.com"><span class="icon-paper-plane"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ftco-footer ftco-section game-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center"></div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle>
+      </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
